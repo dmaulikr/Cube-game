@@ -29,8 +29,6 @@ public class Game extends Canvas implements Runnable{
         hud.setHandler(handler);
         handler.setFollower(new Follower(WIDTH/2,HEIGHT/2,1,handler,player));
         this.addKeyListener(new KeyInput(player));
-
-
     }
 
     public synchronized void start(){
@@ -89,11 +87,6 @@ public class Game extends Canvas implements Runnable{
             spawned = true;
         }
 
-        if(hud.getLevel() == 20)
-        {
-            handler.boss = null;
-            handler.
-        }
     }
 
     private void render(){
